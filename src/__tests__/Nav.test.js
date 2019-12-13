@@ -11,7 +11,7 @@ describe('NavBar', () => {
         const NavBar = shallow(<Nav />);
     });
     it('renders 3 links', () => {
-        const links = mountedNav.find('a');
+        const links = mountedNav.find('Link');
         expect(links.length).toBe(3);
     });
 });

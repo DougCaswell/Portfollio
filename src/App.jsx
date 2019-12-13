@@ -18,7 +18,7 @@ function App() {
         </main>
         <footer>
           Footer
-      </footer>
+        </footer>
       </div>
     </HashRouter>
   );
