@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter } from 'react-router-dom';
-import './App.css';
+import './App.scss';
 import Nav from './components/Nav.jsx';
 import routes from './routes.jsx';
 
@@ -11,8 +11,8 @@ function App() {
       <div className="App">
         <header className="App-header">
           <h1>My Portfollio in progress</h1>
+          <Nav />
         </header>
-        <Nav />
         <main>
           {routes}
         </main>

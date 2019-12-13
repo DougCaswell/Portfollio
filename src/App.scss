@@ -1,0 +1,36 @@
+$font-stack: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$base-size: 20px;
+$almost-black: #121212;
+$color-1: #3146DE; 
+$color-2: #5437FA; 
+$color-3: #4287f5; 
+$color-4: #31A1DE; 
+$color-5: #37E9FA; 
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  header {
+    h1 {
+      text-align: center;
+      font-family: $font-stack;
+      font-size: $base-size * 3;
+      color: $color-1;
+    }
+  }
+  main {
+    background-color: #eee;
+    height: 100%;
+  }
+  nav {
+    a {
+      font-size: $base-size;
+      color: $color-2;
+      margin: 0 100px;
+    }
+  }
+}
