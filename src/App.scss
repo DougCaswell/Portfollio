@@ -21,16 +21,36 @@ $color-5: #37E9FA;
       font-size: $base-size * 3;
       color: $color-1;
     }
+    height: 150px;
+    background-color: #eee;
+    width: 100%;
   }
   main {
-    background-color: #eee;
-    height: 100%;
+    position: absolute;
+    top: 150px;
+    bottom: 100px;
+    width: 100%;
   }
   nav {
     a {
       font-size: $base-size;
+      font-family: $font-stack;
+      font-size: $base-size * 1.5;
       color: $color-2;
       margin: 0 100px;
     }
+    a.selected {
+      color: $color-2;
+      // font-size: $base-size * 1.5;
+      font-weight: bold;
+    }
+    margin-top: 40px;
+  }
+  footer {
+    height: 100px;
+    background-color: #eee;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
   }
 }
