@@ -36,12 +36,11 @@ $color-5: #37E9FA;
       font-size: $base-size;
       font-family: $font-stack;
       font-size: $base-size * 1.5;
-      color: $color-2;
+      color: $color-3;
       margin: 0 100px;
     }
     a.selected {
-      color: $color-2;
-      // font-size: $base-size * 1.5;
+      color: $color-1;
       font-weight: bold;
     }
     margin-top: 40px;
