@@ -19,10 +19,10 @@ $color-5: #37E9FA;
       text-align: center;
       font-family: $font-stack;
       font-size: $base-size * 3;
-      color: $color-1;
+      // color: $color-1;
     }
     height: 150px;
-    background-color: #eee;
+    background-color: #cccccc;
     width: 100%;
   }
   main {
@@ -30,26 +30,64 @@ $color-5: #37E9FA;
     top: 150px;
     bottom: 100px;
     width: 100%;
+    transition: width 2s;
   }
   nav {
     a {
       font-size: $base-size;
       font-family: $font-stack;
       font-size: $base-size * 1.5;
-      color: $color-3;
-      margin: 0 100px;
+      color: $color-1;
+      padding: 0 100px;
     }
     a.selected {
-      color: $color-1;
+      color: $almost-black;
       font-weight: bold;
+      background-color: #ffffff;
+      border-radius: 25px;
+      box-shadow: 0 12px 2px #ffffff;
+    }
+    a:hover {
+      color: adjust-hue($color-1, 15%)
+
+    }
+    a.selected:hover {
+      color: $almost-black;
+      cursor: default;
     }
     margin-top: 40px;
   }
+  .title {
+    font-size: $base-size * 3;
+    text-align: center;
+    padding: 50px 0;
+  }
+  .aboutMe {    
+    .flex {
+      display: flex;
+      img {
+        height: auto;
+        max-width: 25%;
+        position: relative;
+        margin: 0 75px;
+        border: $almost-black solid 4px;
+        border-radius: 75px;
+      }
+      .text {
+        font-size: $base-size * 1.25;
+        margin-right: 75px;
+      }
+    }
+  }
   footer {
     height: 100px;
-    background-color: #eee;
+    background-color: #ccc;
     position: absolute;
     bottom: 0px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $base-size;
   }
 }

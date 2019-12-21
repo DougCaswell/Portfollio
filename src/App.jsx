@@ -17,7 +17,7 @@ function App() {
           {routes}
         </main>
         <footer>
-          Footer
+          © 2019 by Doug Caswell
         </footer>
       </div>
     </HashRouter>
