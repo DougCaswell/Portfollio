@@ -1,6 +1,7 @@
 $font-stack: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 $base-size: 20px;
 $almost-black: #121212;
+$color-0: #cccccc;
 $color-1: #3146DE; 
 $color-2: #5437FA; 
 $color-3: #4287f5; 
@@ -15,29 +16,26 @@ $color-5: #37E9FA;
 
 .App {
   header {
+    height: 150px;
+    background-color: $color-0;
+    width: 100%;
     h1 {
       text-align: center;
       font-family: $font-stack;
       font-size: $base-size * 3;
-      // color: $color-1;
     }
-    height: 150px;
-    background-color: #cccccc;
-    width: 100%;
-  }
-  main {
-      position: absolute;
-      top: 150px;
-      bottom: 100px;
-      width: 100%;
-      transition: width 2s;
     nav {
+      margin-top: 30px;
+      top: 0px;
+      display: flex;
+      align-self: flex-start;
+      justify-content: space-around;
       a {
         font-size: $base-size;
         font-family: $font-stack;
         font-size: $base-size * 1.5;
         color: $color-1;
-        padding: 0 100px;
+        padding: 10px;
       }
       a.selected {
         color: $almost-black;
@@ -54,8 +52,14 @@ $color-5: #37E9FA;
         color: $almost-black;
         cursor: default;
       }
-      margin-top: 40px;
     }
+  }
+  main {
+      position: absolute;
+      top: 150px;
+      bottom: 100px;
+      width: 100%;
+      transition: width 2s;
     .title {
       font-size: $base-size * 3;
       text-align: center;
@@ -78,17 +82,50 @@ $color-5: #37E9FA;
         }
       }
     }
-    .carousel {
-      img {
-        height: 300px;
-        width: auto;
+    .Projects {
+      .project {
+        .carousel {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin: 25px;
+          img {
+            height: 300px;
+            width: auto;
+          }
+          button {
+            margin: 0 5px;
+            font-size: $base-size * 5;
+            border: none;
+            background: none;
+            cursor: pointer;
+          }
+          button:hover {
+            border-radius: 75px;
+          }
+          button:last-child:hover {
+            box-shadow: 10px 1px 5px $color-0;
+          }
+          button:first-child:hover {
+            box-shadow: -10px 1px 5px $color-0;
+          }
+          button:focus {
+            outline: none;
+          }
+        }
       }
+    }
+    .description {
+      padding: 25px;
+    }
+    .footerSpace {
+      height: 100px;
     }
   }
   footer {
     height: 100px;
-    background-color: #ccc;
-    position: absolute;
+    background-color: $color-0;
+    position: fixed;
     bottom: 0px;
     width: 100%;
     display: flex;

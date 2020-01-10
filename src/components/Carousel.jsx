@@ -33,7 +33,7 @@ export default class Carousel extends Component {
 
         } else if (direction === '-') {
 
-            if (this.state.currentSlide = 0) {
+            if (this.state.currentSlide === 0) {
                 this.setState({ currentSlide: maxIndex })
             } else {
                 this.setState({ currentSlide: current - 1 })
@@ -47,7 +47,6 @@ export default class Carousel extends Component {
     render() {
         return (
             <div className='carousel'>
-                Carousel
                 <button className="left" onClick={() => this.moveCarousel('-')}>{"<"}</button>
 
                 {this.images()[this.state.currentSlide]}
