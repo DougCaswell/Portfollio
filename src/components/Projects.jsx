@@ -15,7 +15,7 @@ const Projects = () => {
     return (
         <div className='Projects'>
             <div className='project slotify'>
-                <h2 className='title'>Slotify</h2>
+                <h2 className='title2'>Slotify</h2>
                 <div className="flex">
                     <Carousel slides={[{ path: S4, name: 'Login' }, { path: S2, name: 'Home' }, { path: S1, name: 'Album' }, { path: S3, name: 'Artist' }]} />
                     <p className='description'>
@@ -33,7 +33,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className='project seedsOfSuccess'>
-                <h2 className='title'>Seeds of Success</h2>
+                <h2 className='title2'>Seeds of Success</h2>
                 <div className="flex">
                     <p className='description'>
                         React | Node | HTML | Styled Components | CSS | JavaScript | PostgreSQL | Express | Massive | Bcrypt | Axios | Session
@@ -51,7 +51,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className='project teamManager'>
-                <h2 className='title'>Team Manager</h2>
+                <h2 className='title2'>Team Manager</h2>
                 <div className="flex">
                     <Carousel slides={[{ path: Tm1, name: 'Login' }, { path: Tm2, name: 'Profile' }, { path: Tm3, name: 'Events' }]} />
                     <p className='description'>
@@ -65,7 +65,6 @@ const Projects = () => {
                     </p>
                 </div>
             </div>
-            <div className='footerSpace'></div>
         </div>
     );
 }

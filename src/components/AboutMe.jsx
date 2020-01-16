@@ -3,8 +3,8 @@ import Photo from '../photos/Profile-smile.JPG';
 
 const AboutMe = () => {
     return (
-        <div class='aboutMe'>
-            <h2 className="title">About Me</h2>
+        <div class='AboutMe'>
+            <h2 className="title">Doug Caswell</h2>
             <div className="flex">
                 <img src={Photo} alt="Profile" />
                 <p className="text">

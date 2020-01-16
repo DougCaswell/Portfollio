@@ -15,10 +15,10 @@ function App() {
         </header>
         <main>
           {routes}
-        </main>
-        <footer>
-          © 2019 by Doug Caswell
+          <footer>
+            © 2019 by Doug Caswell
         </footer>
+        </main>
       </div>
     </HashRouter>
   );
